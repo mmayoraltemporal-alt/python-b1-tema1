@@ -40,9 +40,15 @@ Exemple:
 '''
 
 def fibonacci(fibonacci_number):
-    # Write here your code
+    if fibonacci_number.type() not type(int):
+        return "El valor intruducido no es un nymero"
+    elif fibonacci.number < 0:
+        return "El valor es menor de 0"
+    else:
+        resultado = fiboncacci(numero-1)+fibonacci(numero-2)
+        return resultado
     pass
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
-# print(fibonacci(10))
+print(fibonacci(10))
